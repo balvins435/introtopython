@@ -11,5 +11,10 @@ if search_result:
     print("Found 'bar' in text at position:", search_result.start())
 
 # re.search index example
-index_result = re.search(r"foobar", text)
-if index_result:
+import re
+
+s = 'GeeksforGeeks: A computer science portal for geeks'
+match = re.search(r'portal', s)
+
+print('Start Index:', match.start())
+print('End Index:', match.end())
